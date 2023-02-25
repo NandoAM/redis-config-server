@@ -1,4 +1,4 @@
-package com.nandoam.config.server.redis;
+package com.nandoam.config.server.model;
 
 public class Property {
     public String key;

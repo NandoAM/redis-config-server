@@ -1,0 +1,7 @@
+ Reserva (usuario, localizador, producto)
+   ¿Exite en redis una reseva para ese usuario?
+   	Si existe 
+   		¿El localizador es el mismo? -> ok -> hacer reserva en gols -> guardar en redis nuevo localizador para el usuario (con expiración)
+   		¿El localizador es diferente? -> error -> la reserva no pertenece a ese usuario.
+	No existe
+	        Hacer reserva en gols con localizador "000000" -> guardar en redis localizador para el usuario.
